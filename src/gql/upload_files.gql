@@ -1,0 +1,9 @@
+mutation uploadFiles($files: [Upload!]!, $record: UserIdDTO!) {
+  uploadFiles(files: $files, record: $record) {
+    userId
+    filename
+    mimetype
+    encoding
+    url
+  }
+}
